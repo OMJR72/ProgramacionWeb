@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/ejercicio15.css">
+        <script src="js/ejercicio15.js"></script>
+        <title>Ejercicio15 - Estudiantes</title>
+    </head>
+
+    <body>
+        <h1>Estudiantes</h1>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre del estudiante"></input>
+        <input type="text" id="calificacion" placeholder="Ingrese la calificación" min="0" max="100"></input>
+        <button onclick="Anadir()">Añadir</button>
+        <br><br>
+        <input type="text" class="respuesta" id="mayor" placeholder="mayor" readonly></input>
+        <br><br>
+        <input type="text" class="respuesta" id="menor" placeholder="menor" readonly></input>
+        <br><br>
+        <input type="text" class="respuesta" id="promedio" placeholder="promedio" readonly></input>
+        <br><br>
+        <button onclick="Calcular()">Calcular</button>
+        <br><br>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Calificación</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>
