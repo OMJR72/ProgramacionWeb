@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: #764ba2;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 320px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.3rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    margin-top: 14px;
+    font-size: 0.9rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #764ba2;
+}
+
+input[readonly] {
+    background-color: #f4f4f8;
+    color: #333;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 4px 6px 4px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:nth-of-type(1) { background-color: #4CAF50; } /* Sumar */
+button:nth-of-type(2) { background-color: #f44336; } /* Restar */
+button:nth-of-type(3) { background-color: #2196F3; } /* Multiplicar */
+button:nth-of-type(4) { background-color: #FF9800; } /* Dividir */

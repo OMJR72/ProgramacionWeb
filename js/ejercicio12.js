@@ -10,6 +10,9 @@ function Añadir() {
 }
 
 function Calcular() {
+    var calificaciones = arreglo.map(estudiante => estudiante.calificacion);
+    
+
     var arreglo = document.getElementById("numeros").value.split(",");
         var arregloNum = arreglo.map(Number);
         document.getElementById("mayor").value = Math.max(...arregloNum);
